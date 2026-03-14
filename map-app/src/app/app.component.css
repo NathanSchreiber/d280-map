@@ -1,0 +1,21 @@
+.content-container {
+    border: 2px solid red;
+    display: grid;
+    grid-template-areas: 
+    "map map info"
+    "map map info"
+    ;
+}
+
+div.map-sect {
+    width: 65vw;
+    height: auto;
+    grid-area: map;
+    border: 2px solid green;
+}
+
+p.country-info {
+    font-size: 2rem;
+    grid-area: info;
+    border: 2px solid blue;
+}
