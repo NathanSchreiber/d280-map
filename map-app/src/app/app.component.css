@@ -14,8 +14,7 @@ div.map-sect {
     border: 2px solid green;
 }
 
-p.country-info {
-    font-size: 2rem;
-    grid-area: info;
+div.info-sect {
     border: 2px solid blue;
+    grid-area: info;
 }
