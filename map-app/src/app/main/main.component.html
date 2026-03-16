@@ -1,8 +1,8 @@
 <div class="content-container">
   <div class="map-sect">
-    <app-world-map></app-world-map>
+    <app-world-map (countrySelected)="dataHandler($event)"></app-world-map>
   </div>
   <div class="info-sect">
-    <app-country-info></app-country-info>
+    <app-country-info [test]="selectedCountry"></app-country-info>
   </div>
 </div>

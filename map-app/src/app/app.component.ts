@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { WorldMapComponent } from "./world-map/world-map.component";
 import { CountryInfoComponent } from "./country-info/country-info.component";

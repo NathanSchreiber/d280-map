@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-country-info',
@@ -15,13 +15,15 @@ export class CountryInfoComponent implements OnInit {
   longitude!: string;
   latitude!: string;
 
+  @Input() test = "";
+
 
   ngOnInit(): void {
-    this.getCountry();
+    
   }
   
-  async getCountry() {
-    let url = "https://api.worldbank.org/v2/country/usa?format=json";
+  async getCountry(event: MouseEvent) {
+    let url = `https://api.worldbank.org/v2/country/${event}?format=json`;
     try {
       let countryCall = await fetch(url);
 
@@ -40,10 +42,9 @@ export class CountryInfoComponent implements OnInit {
       this.longitude = result[1][0].longitude;
       this.latitude = result[1][0].latitude;
 
-      console.log(this.incomeLevel)
-
     } catch(err) {
       console.error(err);
     };
   }
+
 }

@@ -10,5 +10,10 @@ import { CountryInfoComponent } from '../country-info/country-info.component';
   styleUrl: './main.component.css'
 })
 export class MainComponent {
+  selectedCountry = '';
 
+  dataHandler(countryCode: string) {
+    this.selectedCountry = countryCode;
+    console.log(this.selectedCountry)
+  }
 }
