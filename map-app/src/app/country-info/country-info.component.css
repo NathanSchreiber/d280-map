@@ -1,3 +1,6 @@
-p.info {
-    font-size: 2rem;
+.info {
+    font-size: 1.75rem;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #F5F7FA;
 }

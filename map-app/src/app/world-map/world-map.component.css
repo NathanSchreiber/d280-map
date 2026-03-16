@@ -1,4 +1,6 @@
 svg {
-    width: 65vw;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
+  fill: #182332;
 }
