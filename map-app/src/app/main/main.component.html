@@ -3,6 +3,6 @@
     <app-world-map (countrySelected)="dataHandler($event)"></app-world-map>
   </div>
   <div class="info-sect">
-    <app-country-info [test]="selectedCountry"></app-country-info>
+    <app-country-info [countryCode]="selectedCountry"></app-country-info>
   </div>
 </div>

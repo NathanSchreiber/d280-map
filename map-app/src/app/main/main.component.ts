@@ -14,6 +14,5 @@ export class MainComponent {
 
   dataHandler(countryCode: string) {
     this.selectedCountry = countryCode;
-    console.log(this.selectedCountry)
   }
 }

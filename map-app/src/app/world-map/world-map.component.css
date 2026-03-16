@@ -4,3 +4,12 @@ svg {
   height: auto;
   fill: #182332;
 }
+
+path:hover {
+  fill: yellow;
+}
+
+path:focus {
+  fill: green;
+  outline: none;
+}
