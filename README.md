@@ -1,4 +1,5 @@
-Student ID: 013054702
+This Angular application features an interactive world map that integrates the World Bank API to retrieve and display information about selected countries.
+Users can click on a country to view real-time data, demonstrating API consumption and dynamic content rendering in Angular.
 
 Angular details: 
 
